@@ -1,5 +1,5 @@
 server:
-  port: 80810
+  port: 8082
 
 security:
   basic:
