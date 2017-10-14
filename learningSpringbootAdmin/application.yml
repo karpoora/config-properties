@@ -1,0 +1,7 @@
+server:
+  port: 80800
+
+security:
+  basic:
+    enabled: false
+
