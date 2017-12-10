@@ -5,11 +5,3 @@ security:
   basic:
     enabled: false
 
-spring:
-  boot:
-    admin:
-      discovery:
-        services: server-admin
-management:
-  security:
-    enabled: false
