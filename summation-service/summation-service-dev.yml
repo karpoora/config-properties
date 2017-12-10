@@ -1,0 +1,14 @@
+server:
+  port: 9001
+
+security:
+  basic:
+    enabled: false
+  ignored:
+    - console/**
+    - health
+
+management:
+  security:
+    enabled: false
+
