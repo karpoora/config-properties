@@ -1,14 +1,20 @@
 server:
   port: 9001
 
+spring:
+  boot:
+    admin:
+      discovery:
+        services: server-admin
+
+management:
+  security:
+    enabled: false
+
 security:
   basic:
     enabled: false
   ignored:
     - console/**
     - health
-
-management:
-  security:
-    enabled: false
 
