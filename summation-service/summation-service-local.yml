@@ -17,3 +17,5 @@ security:
   ignored:
     - console/**
     - health
+
+value: 66
