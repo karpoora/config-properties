@@ -18,4 +18,5 @@ security:
     - console/**
     - health
 
-value: 66
+sum:
+  text: 66

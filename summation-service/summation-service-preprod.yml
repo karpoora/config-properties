@@ -19,3 +19,5 @@ security:
     - health
 
 
+sum:
+  text: 66
