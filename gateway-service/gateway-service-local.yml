@@ -7,6 +7,13 @@ spring:
       discovery:
         services: server-admin
 
+zuul:
+  routes:
+    prefix: /student
+    account:
+      path: /**
+        serviceId: student-service
+
 management:
   security:
     enabled: false
@@ -17,8 +24,3 @@ security:
   ignored:
     - console/**
     - health
-
-
-
-sum:
-  text: 66

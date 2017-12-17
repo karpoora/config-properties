@@ -17,7 +17,3 @@ security:
   ignored:
     - console/**
     - health
-
-
-sum:
-  text: 66
