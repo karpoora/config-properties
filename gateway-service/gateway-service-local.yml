@@ -9,9 +9,8 @@ spring:
 
 zuul:
   routes:
-    prefix: /student
     account:
-      path: /**
+      path: /student/**
         serviceId: student-service
 
 management:
