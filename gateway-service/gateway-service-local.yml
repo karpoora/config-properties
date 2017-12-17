@@ -12,6 +12,9 @@ zuul:
     student:
       path: /student/**
       serviceId: student-service
+    college:
+      path: /college/**
+      serviceId: college-service
 
 management:
   security:
