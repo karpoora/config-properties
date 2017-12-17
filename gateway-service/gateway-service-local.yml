@@ -10,7 +10,7 @@ spring:
 zuul:
   routes:
     student:
-      path: /student
+      path: /student/**
       serviceId: student-service
 
 management:
