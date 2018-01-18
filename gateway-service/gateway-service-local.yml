@@ -16,6 +16,8 @@ zuul:
       path: /college/**
       serviceId: college-service
 
+# http://192.168.1.4:9001/routes
+
 management:
   security:
     enabled: false
