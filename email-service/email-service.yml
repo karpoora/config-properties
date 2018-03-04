@@ -1,11 +1,10 @@
 server:
   port: 8081
 
-spring:
-  boot:
-    admin:
-      discovery:
-        services: server-admin
+eureka:
+  client:
+    healthcheck:
+      enabled: true
 
 management:
   security:
