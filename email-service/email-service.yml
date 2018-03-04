@@ -6,10 +6,6 @@ eureka:
     healthcheck:
       enabled: true
 
-management:
-  security:
-    enabled: false
-
 security:
   basic:
     enabled: false
