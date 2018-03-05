@@ -1,19 +1,16 @@
 server:
-  port: 8081
+  port: 8087
 
-spring:
-  boot:
-    admin:
-      discovery:
-        services: server-admin
+security:
+  basic:
+    enabled: false
 
 management:
   security:
     enabled: false
 
-security:
-  basic:
-    enabled: false
-  ignored:
-    - console/**
-    - health
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true

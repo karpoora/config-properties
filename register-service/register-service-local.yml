@@ -1,9 +1,14 @@
 server:
-  port: 8082
+  port: 8088
 
 security:
   basic:
     enabled: false
+
+management:
+  security:
+    enabled: false
+
 
 eureka:
   client:
