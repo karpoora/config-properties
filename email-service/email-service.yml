@@ -1,10 +1,9 @@
+management:
+  security:
+    enabled: false
+
 server:
   port: 8081
-
-eureka:
-  client:
-    healthcheck:
-      enabled: true
 
 security:
   basic:
