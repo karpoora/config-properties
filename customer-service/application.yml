@@ -18,5 +18,5 @@ management:
         include: "*"
 
 customer:
-  title: title1
+  title: title2
 
