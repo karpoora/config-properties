@@ -16,12 +16,3 @@ management:
     web:
       exposure:
         include: "*"
-eureka:
-  client:
-    service-url:
-        defaultZone: http://35.185.47.241:8761/eureka
-    register-with-eureka: true
-    fetch-registry: true
-  instance:
-    prefer-ip-address: true
-    leaseRenewalIntervalInSeconds: 10
