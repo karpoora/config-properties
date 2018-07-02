@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://35.237.182.53:9000
+        instance:
+          prefer-ip: true
+  data:
+    mongodb:
+      uri: mongodb+srv://sundarapandiank:Karnan22%40@cluster0-vdmrr.mongodb.net/test?retryWrites=true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  client:
+    service-url:
+        defaultZone: http://35.185.47.241:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+    leaseRenewalIntervalInSeconds: 10
