@@ -17,6 +17,6 @@ management:
       exposure:
         include: "*"
 
-customer:
+order:
   title: order title
 
