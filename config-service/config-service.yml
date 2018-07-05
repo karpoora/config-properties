@@ -1,0 +1,26 @@
+server:
+  port: 8082
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://35.237.182.53:9000
+        instance:
+          prefer-ip: true
+  cloud:
+    config:
+      server:
+        git:
+          search-paths: customer-service, order-service
+          uri: https://github.com/karpoora/config-repository
+          username: sundarapandiank@yahoo.com
+          clone-on-start: true
+          password: Karnan22@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
