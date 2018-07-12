@@ -11,6 +11,8 @@ spring:
     messaging:
       kafka:
         enabled: true
+    sampler:
+      probability: 1
   boot:
     admin:
       client:
