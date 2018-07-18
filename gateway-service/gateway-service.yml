@@ -27,19 +27,3 @@ management:
         include: "*"
   security:
     enabled: false
-
-zuul:
-  routes:
-    student:
-      path: /student/**
-      serviceId: student-service
-    college:
-      path: /college/**
-      serviceId: college-service
-
-security:
-  basic:
-    enabled: false
-  ignored:
-    - console/**
-    - health
