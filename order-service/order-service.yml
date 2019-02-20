@@ -31,3 +31,5 @@ management:
 order:
   title: order title
 
+logging:
+  path: C:/var/log/order-service/

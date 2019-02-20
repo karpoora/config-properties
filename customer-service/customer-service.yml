@@ -31,3 +31,5 @@ management:
 customer:
   title: title2
 
+logging:
+  path: C:/var/log/customer-service/

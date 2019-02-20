@@ -29,3 +29,5 @@ management:
         include: "*"
 
 
+logging:
+  path: C:/var/log/product-service/
