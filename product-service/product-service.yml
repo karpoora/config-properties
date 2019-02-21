@@ -21,7 +21,7 @@ spring:
           prefer-ip: true
   data:
     mongodb:
-      uri: mongodb+srv://sundarapandiank:Karnan22@cluster0-vdmrr.mongodb.net/test?retryWrites=true
+      uri: mongodb://localhost/test
 management:
   endpoints:
     web:
