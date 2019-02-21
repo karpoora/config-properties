@@ -19,9 +19,6 @@ spring:
         url: http://10.40.32.139:9000
         instance:
           prefer-ip: true
-  data:
-    mongodb:
-      uri: mongodb://10.40.32.139/test
 
 management:
   endpoints:
