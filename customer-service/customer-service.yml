@@ -19,7 +19,9 @@ spring:
         url: http://10.40.32.139:9000
         instance:
           prefer-ip: true
-
+  data:
+    mongodb:
+      host: 10.40.32.139
 management:
   endpoints:
     web:
