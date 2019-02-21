@@ -23,6 +23,7 @@ spring:
     mongodb:
       host: 10.40.32.139
       port: 27017
+      database: plantwoo
 
 management:
   endpoints:
