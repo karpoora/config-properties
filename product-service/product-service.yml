@@ -21,7 +21,7 @@ spring:
           prefer-ip: true
   data:
     mongodb:
-      uri: mongodb://sundarapandiank:Karnan22%40@cluster0-shard-00-00-vdmrr.mongodb.net:27017,cluster0-shard-00-01-vdmrr.mongodb.net:27017,cluster0-shard-00-02-vdmrr.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true
+      uri: mongodb+srv://sundarapandiank:Karnan22%40@cluster0-vdmrr.mongodb.net/test?retryWrites=true
 management:
   endpoints:
     web:
