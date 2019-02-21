@@ -22,6 +22,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://10.40.32.139/test
+
 management:
   endpoints:
     web:
