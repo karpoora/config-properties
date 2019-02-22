@@ -27,3 +27,7 @@ management:
         include: "*"
   security:
     enabled: false
+
+
+logging:
+  path: C:/var/log/gateway-service/
