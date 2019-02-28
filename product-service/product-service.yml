@@ -1,0 +1,36 @@
+server:
+  port: 8084
+
+spring:
+  kafka:
+    bootstrap-servers: http://${HOST_IP}:9092
+  zipkin:
+    sender:
+      type: kafka
+  sleuth:
+    messaging:
+      kafka:
+        enabled: true
+    sampler:
+      probability: 0.9
+  boot:
+    admin:
+      client:
+        url: http://${HOST_IP}:9000
+        instance:
+          prefer-ip: true
+  data:
+    mongodb:
+      host: ${HOST_IP}
+      port: 27017
+      database: plantwoo
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+logging:
+  path: C:/var/log/product-service/
