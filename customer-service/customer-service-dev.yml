@@ -1,0 +1,38 @@
+server:
+  port: 8083
+
+spring:
+  kafka:
+    bootstrap-servers: http://${HOST_IP}:9092
+  zipkin:
+    sender:
+      type: kafka
+  sleuth:
+    messaging:
+      kafka:
+        enabled: true
+    sampler:
+      probability: 1.0
+  boot:
+    admin:
+      client:
+        instance:
+          prefer-ip: true
+          name: admin-service
+  data:
+    mongodb:
+      host: ${HOST_IP}
+      port: 27017
+      database: tcx
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+customer:
+  title: title2
+
+logging:
+  path: C:/var/log/customer-service/dev/
