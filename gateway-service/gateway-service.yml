@@ -3,7 +3,8 @@ server:
 
 spring:
   kafka:
-    bootstrap-servers: http://${HOST_IP}:9092
+    #bootstrap-servers: http://${HOST_IP}:9092
+    bootstrap-servers: http://localhost:9092
   zipkin:
     sender:
       type: kafka
@@ -16,7 +17,8 @@ spring:
   boot:
     admin:
       client:
-        url: http://${HOST_IP}:9000
+       # url: http://${HOST_IP}:9000
+        url: http://localhost:9000
         instance:
           prefer-ip: true
 
