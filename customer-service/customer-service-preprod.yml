@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8085
 
 spring:
   kafka:
@@ -16,14 +16,14 @@ spring:
   boot:
     admin:
       client:
-        url: http://${HOST_IP}:9000
         instance:
           prefer-ip: true
+          name: admin-service
   data:
     mongodb:
       host: ${HOST_IP}
       port: 27017
-      database: plantwoo
+      database: tcx
 
 management:
   endpoints:
@@ -35,4 +35,4 @@ customer:
   title: title2
 
 logging:
-  path: C:/var/log/customer-service/
+  path: C:/var/log/customer-service/preprod/
