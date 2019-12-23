@@ -2,14 +2,28 @@ server:
   port: 9001
 
 spring:
+  kafka:
+    #bootstrap-servers: http://${HOST_IP}:9092
+    bootstrap-servers: http://localhost:9092
+  sleuth:
+    messaging:
+      kafka:
+        enabled: true
+    sampler:
+      probability: 1.0
+  zipkin:
+    kafka:
+      topic: blunt-onboard
+    sender:
+      type: kafka
   boot:
     admin:
       client:
         # url: http://${HOST_IP}:9000
         url: http://localhost:9000
         instance:
-          prefer-ip: true
-
+          health-url: http://host.docker.internal:9001/actuator/health
+          management-url: http://host.docker.internal:9001/actuator
 management:
   endpoints:
     web:
@@ -17,4 +31,5 @@ management:
         include: "*"
 
 logging:
-  path: C:/Users/kpaulpa/Documents/workArea/TechnicalWork/logs/blunt-onboard-service
+  file:
+    path: C:/Users/kpaulpa/Documents/workArea/TechnicalWork/logs/blunt-onboard-service
