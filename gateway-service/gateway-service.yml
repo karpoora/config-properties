@@ -10,7 +10,7 @@ spring:
           lower-case-service-id: true
       routes:
         - id: onboard
-          uri: lb://ONBOARD-SERVICE
+          uri: lb://onboard-service
           predicates:
             - Path=/api/v1/onboard/**
 
