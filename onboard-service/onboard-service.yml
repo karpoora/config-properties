@@ -16,6 +16,9 @@ spring:
       topic: blunt-onboard
     sender:
       type: kafka
+  data:
+    mongodb:
+      uri: mongodb+srv://blunt:blunt@clusterblunt-ozeey.gcp.mongodb.net/test?retryWrites=true&w=majority
   boot:
     admin:
       client:
