@@ -42,6 +42,8 @@ spring:
 management:
   endpoints:
     web:
+      cors:
+        allowed-origins: *
       exposure:
         include: "*"
 
