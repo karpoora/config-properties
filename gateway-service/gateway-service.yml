@@ -42,10 +42,6 @@ spring:
 management:
   endpoints:
     web:
-      cors:
-        allowed-origins: "*"
-        allowed-headers: "*"
-        allowed-methods: "*"
       exposure:
         include: "*"
 
